@@ -23,7 +23,7 @@ function (Tone, Loading, MultiPlayer) {
 
 		this.instrument = instrument;
 
-		this.player = new MultiPlayer("https://gweb-musiclab-site.appspot.com/static/sound/" + instrument, "C3", "Gb6", 3);
+		this.player = new MultiPlayer("../sound/" + instrument, "C3", "Gb6", 3);
 
 		this.player.onload = function(){
 			console.log("here");

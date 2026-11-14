@@ -31,7 +31,7 @@ define(["Tone/event/Sequence", "Tone/core/Transport", "sound/Player"],
 		this.seq = new Sequence(this._tick.bind(this), [Infinity, 0, 1, 2], delayTime).start(0);
 		this.seq.loop = false;
 
-		this.player = new Player("https://gweb-musiclab-site.appspot.com/static/sound/piano", lowestNote, highestNote, 3);
+		this.player = new Player("../sound/piano", lowestNote, highestNote, 3);
 	};
 
 	Arp.prototype.stop = function(){

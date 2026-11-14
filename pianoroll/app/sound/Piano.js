@@ -19,7 +19,7 @@ function (Buffer, Loader, Transport, MultiPlayer) {
 
 	var Piano = function(){
 
-		this._piano = new MultiPlayer("https://gweb-musiclab-site.appspot.com/static/sound/piano", "A0", "C8", 3);
+		this._piano = new MultiPlayer("../sound/piano", "A0", "C8", 3);
 
 		this._allLoaded = false;
 

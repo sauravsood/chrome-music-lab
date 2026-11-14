@@ -16,7 +16,11 @@
 
 define(function () {
 
-	var languageText = null;
+	var languageText = {
+		"Chords_UI_Minor" : {"message" : "Minor"},
+		"Chords_UI_Major" : {"message" : "Major"},
+		"Chords_UI_Press_Key" : {"message" : "Press a key"}
+	};
 
 	function capitalize(str){
 		return str.charAt(0).toUpperCase() + str.substr(1);
@@ -31,24 +35,9 @@ define(function () {
 	 * @return {String} 
 	 */
 	return {
+		// kids.sauravsood.com: English only, so nothing is fetched from another site.
 		load : function(origin, callback){
-			var xhr = new XMLHttpRequest();
-			xhr.open("GET", "https://gweb-musiclab-site.appspot.com/static/locales/"+origin+"/locale-music-lab.json");
-			xhr.onreadystatechange = function () {
-				if (xhr.readyState === 4) {
-					if (xhr.status === 200) {
-						var json = JSON.parse(xhr.responseText);
-						languageText = json;
-						callback();
-					} else {
-						if (tries < 3){
-							tries++;
-							this.load("en", callback);
-						}
-					}
-				}
-			}.bind(this);
-			xhr.send(null);
+			callback();
 		},
 		localize : function(phrase){
 			if (languageText){

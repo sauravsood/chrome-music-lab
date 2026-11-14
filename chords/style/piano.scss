@@ -9,3 +9,11 @@ $pianoWidth: 390px;
 	max-width: 400px;
 	height: $pianoHeight;
 }
+// kids.sauravsood.com: the piano was sized for a phone. Make it bigger on
+// tablets so the keys suit small fingers.
+@media (min-width: 700px) and (min-height: 600px) {
+	#Piano {
+		max-width: 780px;
+		height: 240px;
+	}
+}

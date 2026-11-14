@@ -41,7 +41,7 @@ define(["style/interface.scss"], function (interfaceStyle) {
 		this.microphone.classList.add("Button");
 		this.microphone.classList.add("icon-svg_record");
 		this.microphone.addEventListener("click", this._clicked.bind(this, "sampler"));
-		this._buttons.appendChild(this.microphone);
+		// kids.sauravsood.com: no microphone recording, so the button is left out.
 
 		//the currently active element
 		this._currentInstrument = "synth";

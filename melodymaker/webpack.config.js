@@ -30,6 +30,7 @@ module.exports = {
 		sourceMapFilename : "[file].map",
 	},
 	resolve: {
+		alias: { "StartAudioContext": "startaudiocontext" },
 		root: __dirname,
 		modulesDirectories : ["style", "app", "third_party/Tone.js/", "third_party", "node_modules"],
 	},

@@ -12,18 +12,21 @@
     "component-resolver-webpack": "*",
     "css-loader": "^0.17.0",
     "domready": "^1.0.8",
-    "file-loader": "*",
-    "html-loader": "*",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.0",
     "imports-loader": "^0.6.5",
-    "node-sass": "^3.4.2",
-    "raw-loader": "*",
+    "node-sass": "npm:sass@1.32.13",
+    "raw-loader": "^0.5.1",
     "sass-loader": "^2.0.1",
     "soundfont-player": "^0.4.0",
     "startaudiocontext": "^1.1.0",
-    "style-loader": "*",
+    "style-loader": "^0.13.0",
     "teoria": "^2.1.1",
-    "url-loader": "*",
+    "url-loader": "^0.5.7",
     "webfontloader": "^1.6.10",
     "webpack": "^1.12.11"
+  },
+  "overrides": {
+    "node-sass": "npm:sass@1.32.13"
   }
 }
